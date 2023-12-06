@@ -1,6 +1,7 @@
-import './Character.scss';
+import './styles.scss';
 import { useEffect } from 'react';
 import { eyesBlinking } from '../../selectors/characterAnimations/eyesBlinking';
+
 function Character() {
 
     useEffect(() => {

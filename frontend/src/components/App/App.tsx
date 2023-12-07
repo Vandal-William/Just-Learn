@@ -5,7 +5,7 @@ import VisitorMessage from '../Message/VisitorMessage';
 
 function App() {
 
-  const [isConnected, setConnection] = useState(false);
+  const [isConnected, setConnection] = useState(true);
 
   return (
     <>

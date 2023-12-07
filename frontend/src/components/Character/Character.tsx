@@ -13,25 +13,9 @@ function Character() {
     return (
       <div className="scene">
         <div className="character">
-            <div className="wrist"></div>
-            <div className="wrist"></div>
-            <div className="arm"></div>
-            <div className="arm"></div>
-            <div className="forearm"></div>
-            <div className="forearm"></div>
-            <div className="shoulder"></div>
-            <div className="shoulder"></div>
-            <div className="body"></div>
-            <div className="pelvis"></div>
-            <div className="thigh"></div>
-            <div className="thigh"></div>
-            <div className="calf"></div>
-            <div className="calf"></div>
-            <div className="knee"></div>
-            <div className="knee"></div>
-            <div className="hand"></div>
-            <div className="hand"></div>
-            <div className="belt"></div>
+        <div className="character-body"></div>
+        <div className="hand"></div>
+            <div className="dress"></div>
             <div className="head">
                 <div className="neck"></div>
                 <div className="ear"></div>
@@ -47,9 +31,7 @@ function Character() {
                 <div className="hair-side"></div>
                 <div className="bangs"></div>
                 <div className="mesh"></div>
-                <div className="mesh2"></div>
-                <div className="eyebrow"></div>
-                <div className="eyebrow"></div>
+                <div className="mesh2"></div> 
             </div>
         </div>
     </div>

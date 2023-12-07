@@ -16,6 +16,7 @@ body{
     overflow: hidden;
     position: relative;
 }
+
 .scene{
     max-width: 600px;
     height: 100vh;
@@ -47,7 +48,7 @@ body{
     aspect-ratio: 1;
     width: 40%;
     left: 50%;
-    top: 5%;
+    top: 16%;
     transform: translate(-50%, 0);
 }
 
@@ -186,181 +187,66 @@ body{
     border-radius: 100% / 90% 90% 120% 120% ;
 }
 
-.neck{
-    width: 20%;
-    height: 30%;
-    background: 
-    radial-gradient(130% 100% at 50% 0, #c002 78%, #0000 0),
-    var(--skin);
-    top: 82%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100% / 30%;
-}
-
-.body{
-    width: 28%;
-    height: 28%;
-    border-radius: 100% / 60% 60% 0% 0%;
+.character-body{
+    bottom: 0;
+    transform: translate(0%, 17%);
+    top: 27%;
+    left: 5%;
+    width: 500px;
+    height: 500px;
     border: 0.1em solid;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, 0);
-    background:
-    radial-gradient(180% 350%  at -10% 71%, var(--background) 10%, #0000 0),
-    radial-gradient(50% 23% at 50% 1%, var(--skin) 27%, currentColor 0 calc(10% + 0.1em), #0000 0),
-    radial-gradient(180% 350% at 110% 71%, var(--background) 10%, var(--shirt) 0);
-    border: none;
-}
-
-.pelvis{
-    width: 30%;
-    height: 10%;
-    border: 0.1em solid;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, 0);
-    border-radius: 50% 40% 30% 30% /100%;
-    background: var(--pants);
-    border: none;
-
-}
-
-.thigh{
-    width: 15%;
-    height: 30%;
-    border: 0.1em solid;
-    top: 59%;
-    left: 32.5%;
-    border-radius: 50% 40% 30% 30% /100%;
-    background: var(--pants);
-    border: none;
-}
-
-.thigh + .thigh{
-    left: auto;
-    right: 32.5%;
-}
-
-.knee{
-    width: 12%;
-    height: 6%;
-   
-    border-radius: 50% 40% 30% 30% /100%;
-    top: 87%;
-    left: 34%;
-    background: var(--pants);
-}
-
-.knee + .knee {
-    left: auto;
-    right: 34%;
-}
-
-.calf{
-    width: 12%;
-    height: 20%;
-   
-    border-radius: 50% 40% 30% 30% /100%;
-    top: 89%;
-    left: 34%; 
-    background: var(--pants);
-}
-
-.calf + .calf {
-    left: auto;
-    right: 34%;
-}
-
-.shoulder{
-    width: 15%;
-    height: 6%;
-    border-radius: 50% 0% 0% 10% /100%;
-    top: 32%;
-    left: 27%;
-    background: var(--shirt);
-}
-
-.shoulder + .shoulder{
-    left: auto;
-    right: 27%;
-    transform: scaleX(-1);
-}
-
-.arm {
-    width: 9%;
-    height: 16%;
-    border-radius:0;
-    top: 34%;
-    left: 26%;
-    aspect-ratio: 1;
-    transform: skewX(-10deg);
-    background: var(--shirt);
-  
+    background: var(--skin);
+    clip-path: polygon(27% 60%, 24% 68%, 15% 39%, 22% 9%, 38% 7%, 39% 0, 47% 0, 48% 7%, 60% 9%, 64% 40%, 73% 60%, 68% 65%, 57% 43%, 55% 26%, 53% 52%, 60% 64%, 63% 78%, 64% 100%, 54% 100%, 45% 100%, 44% 79%, 40% 79%, 36% 100%, 25% 100%, 17% 100%, 23% 65%, 30% 52%, 29% 25%, 23% 40%);
     
 }
 
-.arm + .arm{
-    left: auto;
-    right: 26%;
-    transform: skewX(10deg);
+.hand{
+    width: 100px;
+    height: 100px;
+    left: 77.6%;
+    top: 73%;
+    background: var(--skin);
+    clip-path: polygon(60% 7%, 98% 46%, 89% 77%, 40% 42%, 34% 46%, 55% 74%, 26% 72%, 0 46%, 0 15%);
+    transform: scaleY(-1) rotate(-45deg);
 }
 
-.forearm{
-    width: 9%;
-    height: 15%;
-    border-radius: 0;
-    aspect-ratio: 1;
-    top: 50%;
-    left: 21.5%;
-    transform: skewX(-10deg);
+.dress{
+    width: 350px;
+    height: 400px;
+    top: 41.5%;
+    left: 11%;
     background: var(--shirt);
-
-}
-
-.forearm + .forearm{
-    left: auto;
-    right: 21.5%;
-    transform: skewX(10deg);
-}
-
-.wrist{
-    width: 5%;
-    height: 3.5%;
-    border-radius: 0%;
-    top: 64%;
-    left: 20%;
-    background: var(--skin);
-}
-
-.wrist + .wrist {
-    left: auto;
-    right: 20%;
-}
-
-.hand {
-    width: 9%;
-    height: 8%;
-    border-radius: 50% 40% 30% 150% / 100%;
-    background: var(--skin);
-    top: 67%;
-    left: 19%;
-}
-
-.hand + .hand {
-    left: auto;
-    right: 19%;
-    transform: scaleX(-1);
-}
-
-.belt{
-    width: 29.5%;
-    height: 6%;
-    border: 0.1em solid;
-    background: var(--belt);
-    top: 54.5%;
-    left: 35.2%;
-    border-radius: 100% / 50% 50% 50% 50%;
+    clip-path: polygon(
+        20% 4%, /* épaule gauche */
+        40% 0, /* bord coup gauche */
+        39% 14%, /* col gauche */
+        50% 25%, /*col centre */
+        61% 14%, /*col droit */
+        65% 0, /* bord coup droit */
+        80% 3%, /* épaule droite */
+        86% 32%, /* bord droit manche droite */
+        71% 33%, /* bord gauche manche droite */
+        70.5% 24%, /* sous épaule droit */
+        68% 57%, /*hanche droit */
+        76% 66%, 
+        84% 75%, 
+        92% 83%, 
+        94% 98%, /*bas de robe */
+        81% 100%, /*bas de robe */
+        61% 98%, /*bas de robe */
+        50% 100%, /*bas de robe */
+        38% 98%, /*bas de robe */
+        29% 100%, /*bas de robe */
+        12% 98%, /*bas de robe */
+        0% 100%, /*bas de robe */
+        11% 81%, 
+        18% 74%, 
+        26% 65%, 
+        34% 56%, /* hanche gauche*/
+        32% 26%, /* sous épaule gauche */
+        30% 33%, /* bord droit manche gauche */
+        14% 29% /* bord gauche manche gauche */
+    ); 
 }
 
 @keyframes clignement {

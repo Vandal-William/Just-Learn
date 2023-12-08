@@ -33,6 +33,11 @@ jobs:
       # Récupération du code
       - name: Fetch Code
         uses: actions/checkout@v4
+
+        # Ajustement des autorisations (si nécessaire)
+      - name: Adjust Permissions
+        run: chmod -R 777 .  # Ajuste les autorisations pour le répertoire frontend
+        
       # Installation des dépendances
       - name: Install dependencies
         run: npm install

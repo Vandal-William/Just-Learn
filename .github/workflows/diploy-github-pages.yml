@@ -28,7 +28,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./
+        working-directory: ./frontend
     steps:
       # Récupération du code
       - name: Fetch Code

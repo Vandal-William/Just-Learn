@@ -9,7 +9,7 @@ sudo docker compose up -d
 
 ### accéder au front 
 
-http://172.19.0.2:3000
+http://172.20.0.2:3000
 
 ### accéder au back
 

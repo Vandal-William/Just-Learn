@@ -3,7 +3,7 @@ function NavBar() {
     return (
       <nav className="nav">
         <div className="nav-wrapper">
-            <h1 className="nav-brandName">Just <span className="nav-brd">Learn</span></h1>
+            <h1 className="nav-brandName">Ivy <span className="nav-brd">Assistante</span></h1>
         </div>
       </nav>
     );

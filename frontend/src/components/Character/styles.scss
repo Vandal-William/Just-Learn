@@ -14,35 +14,37 @@ body{
     background: var(--background);
     height: 100vh; 
     overflow: hidden;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .scene{
-    max-width: 600px;
-    height: 100vh;
+    max-width: 1200px;
+    height: 740px;
     position: relative;
     background: var(--background);
     margin: auto;
     overflow: hidden; 
 }
 
-.scene *,
-.scene *::before,
-.scene *::after{
+.character *,
+.character *::before,
+.character *::after{
     position: absolute;
     box-sizing: border-box;
 }
 
 .character{
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0);
+    transform: translate(80%, -5%);
     width: 30em;
     height: 50em;
     aspect-ratio: 1;
     color: #621;
     overflow: hidden;
+    
 }
+
 
 .head{
     aspect-ratio: 1;
@@ -258,4 +260,14 @@ body{
       height: 1%;
       top : 65%
     }
-  }
+}
+
+
+@keyframes moveRight {
+    from {
+        transform: translate(80%, -5%);
+    }
+    to {
+        transform: translate(0%, -5%);
+    }
+}
